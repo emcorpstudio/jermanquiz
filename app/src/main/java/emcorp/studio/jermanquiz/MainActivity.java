@@ -42,14 +42,22 @@ public class MainActivity extends AppCompatActivity {
         btnMenuLatihan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Coming Soon..",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Coming Soon..", Toast.LENGTH_SHORT).show();
+//                Integer[] arr = new Integer[10];
+//                for (int i = 0; i < arr.length; i++) {
+//                    arr[i] = i;
+//                }
+//                Collections.shuffle(Arrays.asList(arr));
+//                System.out.println(Arrays.toString(arr));
             }
         });
 
         btnMenuTentang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Coming Soon..",Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(MainActivity.this,MenuTentangActivity.class);
+                startActivity(i);
+                finish();
             }
         });
     }

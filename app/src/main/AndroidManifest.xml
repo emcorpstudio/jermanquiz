@@ -19,9 +19,11 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".MenuBelajarActivity" />
         <activity android:name=".HomePercobaanActivity" />
-        <activity android:name=".MendengarkanPercobaanActivity"></activity>
-        <activity android:name=".MenulisPercobaanActivity"></activity>
-        <activity android:name=".MelihatPercobaanActivity"></activity>
+        <activity android:name=".MendengarkanPercobaanActivity" />
+        <activity android:name=".MenulisPercobaanActivity" />
+        <activity android:name=".MelihatPercobaanActivity" />
+        <activity android:name=".MencocokkanPercobaanActivity" />
+        <activity android:name=".MenuTentangActivity"></activity>
     </application>
 
 </manifest>

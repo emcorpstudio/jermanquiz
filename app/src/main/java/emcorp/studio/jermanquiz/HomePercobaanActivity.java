@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class HomePercobaanActivity extends AppCompatActivity {
     Button btnMendengarkan, btnMenulis, btnMelihat, btnMencocokkan;
@@ -53,7 +52,9 @@ public class HomePercobaanActivity extends AppCompatActivity {
         btnMencocokkan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Coming soon",Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(HomePercobaanActivity.this,MencocokkanPercobaanActivity.class);
+                startActivity(i);
+                finish();
             }
         });
     }
