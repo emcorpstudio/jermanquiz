@@ -7,7 +7,6 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button btnMenuBelajar, btnMenuPercobaan, btnMenuLatihan, btnMenuTentang;
@@ -42,13 +41,9 @@ public class MainActivity extends AppCompatActivity {
         btnMenuLatihan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Coming Soon..", Toast.LENGTH_SHORT).show();
-//                Integer[] arr = new Integer[10];
-//                for (int i = 0; i < arr.length; i++) {
-//                    arr[i] = i;
-//                }
-//                Collections.shuffle(Arrays.asList(arr));
-//                System.out.println(Arrays.toString(arr));
+                Intent i = new Intent(MainActivity.this,LatihanActivity.class);
+                startActivity(i);
+                finish();
             }
         });
 

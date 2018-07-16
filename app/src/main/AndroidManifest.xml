@@ -10,11 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ActivitySplash">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+
+
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".MenuBelajarActivity" />
@@ -23,7 +25,15 @@
         <activity android:name=".MenulisPercobaanActivity" />
         <activity android:name=".MelihatPercobaanActivity" />
         <activity android:name=".MencocokkanPercobaanActivity" />
-        <activity android:name=".MenuTentangActivity"></activity>
+        <activity android:name=".MenuTentangActivity" />
+        <activity android:name=".LatihanActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".ScoreActivity"></activity>
     </application>
 
 </manifest>
